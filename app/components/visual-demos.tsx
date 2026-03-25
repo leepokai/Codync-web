@@ -302,7 +302,7 @@ function CloudKitSyncDemo() {
           className="mt-4 flex items-center justify-center gap-2"
         >
           <div className="w-2 h-2 rounded-full bg-green-500/60" />
-          <span className="text-[11px] text-white/50">Synced via iCloud</span>
+          <span className="text-[11px] text-white/50">All devices in sync</span>
         </motion.div>
       </div>
     </div>
@@ -517,8 +517,8 @@ export default function VisualDemos() {
           </DemoCard>
 
           <DemoCard
-            title="CloudKit Sync"
-            description="Your session data syncs privately through iCloud. Zero server infrastructure needed."
+            title="Cross-device Sync"
+            description="Access your sessions from anywhere — no LAN required. Syncs automatically across all your Apple devices."
             index={3}
           >
             <CloudKitSyncDemo />

@@ -46,9 +46,9 @@ const features = [
         <path d="M4 16.5C2.8 15.3 2 13.7 2 12c0-3.3 2.7-6 6-6 .3 0 .7 0 1 .1C10.1 4.2 12 3 14.2 3c3 0 5.5 2.3 5.8 5.2C22 9 23 10.8 23 13c0 2.8-2.2 5-5 5H6c-.7 0-1.4-.2-2-.5z" />
       </svg>
     ),
-    title: "CloudKit Sync",
+    title: "Cross-device Sync",
     description:
-      "Your session data syncs privately through iCloud. Zero server infrastructure needed.",
+      "Access your sessions from anywhere — no LAN required. Syncs automatically across all your Apple devices.",
   },
   {
     icon: (

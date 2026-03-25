@@ -40,9 +40,9 @@ export default function Hero() {
         </h1>
 
         <p className="mt-4 text-lg sm:text-xl text-neutral-400 max-w-md leading-relaxed">
-          Monitor your Claude Code sessions in real-time.
+          Monitor your Claude Code sessions in real-time, from anywhere.
           <br />
-          <span className="text-neutral-500">Zero config. One-click install. No login required.</span>
+          <span className="text-neutral-500">No LAN required. Zero config. No login needed.</span>
         </p>
 
         <motion.span
@@ -78,11 +78,11 @@ export default function Hero() {
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-neutral-800 text-xs text-neutral-400">
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-400" />
-            CloudKit Sync
+            Cross-device Sync
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-neutral-800 text-xs text-neutral-400">
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
-            APNs Push
+            Push Notifications
           </span>
         </motion.div>
       </motion.div>
