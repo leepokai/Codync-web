@@ -2,7 +2,6 @@ import Hero from "./components/hero";
 import DeviceShowcase from "./components/device-showcase";
 import VisualDemos from "./components/visual-demos";
 import DemoVideo from "./components/demo-video";
-import WaitlistForm from "./waitlist-form";
 
 export default function Home() {
   return (
@@ -21,7 +20,27 @@ export default function Home() {
 
       {/* CTA */}
       <section className="flex flex-col items-center gap-8 px-6 py-20">
-        <WaitlistForm />
+        <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <a
+              href="https://apps.apple.com/tw/app/codync/id6760984418?l=en-GB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-semibold rounded-xl hover:bg-neutral-200 transition-colors"
+            >
+              Download for iOS
+            </a>
+            <a
+              href="https://github.com/leepokai/Codync/releases/latest/download/Codync-macOS.dmg"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-800 text-white font-semibold rounded-xl hover:bg-neutral-700 transition-colors"
+            >
+              Download for macOS
+            </a>
+          </div>
+          <p className="text-sm text-neutral-500">
+            Free &amp; open source. No account needed — just download and go.
+          </p>
+        </div>
       </section>
 
       {/* Footer */}
