@@ -20,10 +20,20 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mb-6 text-sm sm:text-base text-neutral-400 font-medium tracking-wide"
+          className="mb-4 text-sm sm:text-base text-neutral-400 font-medium tracking-wide"
         >
           Now you can vibe code with Claude Code while jogging
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4, delay: 0.05 }}
+          className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs sm:text-sm text-neutral-300"
+        >
+          <span className="text-base">🏆</span>
+          #29 Developer Tools on the App Store
+        </motion.div>
 
         <motion.img
           src="/icon.png"
