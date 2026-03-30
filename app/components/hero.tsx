@@ -16,15 +16,6 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="relative z-10 flex flex-col items-center text-center"
       >
-        <motion.p
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="mb-4 text-sm sm:text-base text-neutral-400 font-medium tracking-wide"
-        >
-          Now you can vibe code with Claude Code while jogging
-        </motion.p>
-
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -47,12 +38,6 @@ export default function Hero() {
         <h1 className="mt-8 text-5xl sm:text-6xl font-bold tracking-tight text-white">
           Codync
         </h1>
-
-        <p className="mt-4 text-lg sm:text-xl text-neutral-400 max-w-md leading-relaxed">
-          Monitor your Claude Code sessions in real-time, from anywhere.
-          <br />
-          <span className="text-neutral-500">No LAN required. Zero config. No login needed.</span>
-        </p>
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -115,6 +100,23 @@ export default function Hero() {
             <span className="w-1.5 h-1.5 rounded-full bg-neutral-500" />
             Push Notifications
           </span>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.45 }}
+          className="mt-8 flex flex-col items-center gap-2"
+        >
+          <p className="text-lg sm:text-xl text-neutral-400 max-w-md leading-relaxed">
+            Monitor your Claude Code sessions in real-time, from anywhere.
+          </p>
+          <p className="text-sm text-neutral-500">
+            No LAN required. Zero config. No login needed.
+          </p>
+          <p className="mt-2 text-sm sm:text-base text-neutral-500 font-medium tracking-wide">
+            Now you can vibe code with Claude Code while jogging
+          </p>
         </motion.div>
       </motion.div>
     </section>
