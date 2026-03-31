@@ -20,10 +20,24 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.4, delay: 0.05 }}
-          className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs sm:text-sm text-neutral-300"
+          className="mb-6 flex flex-col sm:flex-row items-center gap-3"
         >
-          <span className="text-base">🏆</span>
-          #29 Developer Tools on the App Store
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.06] border border-white/[0.08] text-xs sm:text-sm text-neutral-300">
+            <span className="text-base">🏆</span>
+            #29 Developer Tools on the App Store
+          </div>
+          <a
+            href="https://www.producthunt.com/products/codync?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-codync"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1111671&theme=dark&t=1774969906397"
+              alt="Codync on Product Hunt"
+              width={200}
+              height={43}
+            />
+          </a>
         </motion.div>
 
         <motion.img
@@ -119,22 +133,6 @@ export default function Hero() {
           </p>
         </motion.div>
 
-        <motion.a
-          href="https://www.producthunt.com/products/codync?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-codync"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-6"
-        >
-          <img
-            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1111671&theme=dark&t=1774969906397"
-            alt="Codync on Product Hunt"
-            width={250}
-            height={54}
-          />
-        </motion.a>
       </motion.div>
     </section>
   );
