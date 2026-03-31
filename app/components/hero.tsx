@@ -118,6 +118,23 @@ export default function Hero() {
             Now you can vibe code with Claude Code while jogging
           </p>
         </motion.div>
+
+        <motion.a
+          href="https://www.producthunt.com/products/codync?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-codync"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="mt-6"
+        >
+          <img
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1111671&theme=dark&t=1774969906397"
+            alt="Codync on Product Hunt"
+            width={250}
+            height={54}
+          />
+        </motion.a>
       </motion.div>
     </section>
   );
